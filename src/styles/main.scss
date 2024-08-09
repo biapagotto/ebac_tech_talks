@@ -1,4 +1,7 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/button';
+@use 'event';
 
 * {
     margin: 0;
@@ -6,12 +9,13 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     color: #fff;
+    list-style: none;
 }
 
 .container {
     max-width: 960px;
     width: 100%;
-    margin: o auto;
+    margin: 0 auto;
 
     @media (max-width: 640px) {
         max-width: 80%;

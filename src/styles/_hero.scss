@@ -5,16 +5,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     .container {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     &::before {
@@ -26,7 +19,6 @@
         background-color: #000;
         content: '';
         opacity: .7;
-        z-index: 1;
     }
 
     &__text {
@@ -36,7 +28,6 @@
         line-height: 56px;
         font-weight: 800;
         text-align: center;
-        z-index: 2; 
     }
 
     &__logo {
@@ -48,6 +39,7 @@
 
     @media (max-width: 640px) {
         padding: 40px 0;
+
         &__logo {
             height: 40px;
         }
@@ -57,5 +49,29 @@
             line-height: 24px;
             margin: 24px 0;
         }
+    }
+}
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: #fff;
+        background-color: #4F2AC3;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+        
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
     }
 }
